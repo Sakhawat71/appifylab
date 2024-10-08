@@ -7,11 +7,17 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        "Inter" : ["Inter", 'sans-serif'] 
+
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('daisyui'),
+  ],
 };
